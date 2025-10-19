@@ -8,8 +8,15 @@
         @include centralElements;
         text-align: center;
 
-        h1 {
-            @include textStyle($fontSize: 35px, $fontWeigth: 800)
+        .title.large {
+            @include textStyle($fontSize: 35px, $fontWeigth: 800);
+
+        }
+        .title.medium {
+            @include textStyle($fontSize: 22px, $fontWeigth: 800);
+        }
+        .title.small {
+            @include textStyle($fontSize: 16px, $fontWeigth: 800);
         }
         p {
             @include textStyle($fontSize: 18px, $fontWeigth: 400);
