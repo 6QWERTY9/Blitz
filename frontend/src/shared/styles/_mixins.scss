@@ -1,0 +1,13 @@
+@use './vars' as *;
+
+@mixin textStyle($fontSize: 14px, $fontWeigth: 400, $color: $black) {
+    font-family: "Roboto";
+    font-size: $fontSize;
+    font-weight: $fontWeigth;
+    color: $color;
+}
+
+@mixin centralElements {
+    width: 90%;
+    justify-self: center;
+}

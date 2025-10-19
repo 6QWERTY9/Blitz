@@ -1,0 +1,19 @@
+@use '../../../styles/mixins' as *;
+@use '../../../styles/vars' as *;
+
+.block_el_layout {
+    @include centralElements;
+    
+    .block_el_layout_text_content {
+        @include centralElements;
+        text-align: center;
+
+        h1 {
+            @include textStyle($fontSize: 35px, $fontWeigth: 800)
+        }
+        p {
+            @include textStyle($fontSize: 18px, $fontWeigth: 400);
+            margin-top: 2%;
+        }
+    }
+}
