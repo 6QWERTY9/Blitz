@@ -5,18 +5,16 @@
     @include centralElements;
     
     .block_el_layout_text_content {
-        @include centralElements;
-        text-align: center;
-
         .title.large {
             @include textStyle($fontSize: 35px, $fontWeigth: 800);
 
         }
         .title.medium {
             @include textStyle($fontSize: 22px, $fontWeigth: 800);
+            text-align: start;
         }
         .title.small {
-            @include textStyle($fontSize: 16px, $fontWeigth: 800);
+            @include textStyle($fontSize: 18px, $fontWeigth: 800);
         }
         p {
             @include textStyle($fontSize: 18px, $fontWeigth: 400);

@@ -1,10 +1,9 @@
-import { BlockElementLayout } from "../shared/components/BlockElementLayout";
+import { PropertyCard } from "../entities/PropertyCard";
+
 
 function App() {
     return (
-        <div style={{width: '956px', height: "400px", backgroundColor: "rebeccapurple"}}>
-            <BlockElementLayout title="Пройдити тест из 5 вопросов" paragraph="Мы подберём 20 покупателей готовых купить вашу недвижимость в течение 24 часов" titleSize="small">adas</BlockElementLayout>
-        </div>
+            <PropertyCard img="./property_img/property1.webp" title="Апартаменты в «башне ОКО»" lotNumber={4536} price={'25 600 000'} pricePerSquareMeter="365 714" square={62} storey={52}/>
     );
 }
 
